@@ -27,7 +27,9 @@
             >
               <span class="text-black font-bold text-sm">FT</span>
             </div>
-            <span class="text-xl font-semibold shadow-md">Fmarket Tracking</span>
+            <span class="text-xl font-semibold shadow-md"
+              >Fmarket Tracking</span
+            >
           </div>
 
           <div class="flex items-center space-x-1 text-sm">
@@ -82,9 +84,7 @@
 
         <!-- Login Header -->
         <div class="text-center lg:text-left">
-          <h2 class="text-3xl font-bold text-slate-900 mb-2">
-            Login
-          </h2>
+          <h2 class="text-3xl font-bold text-slate-900 mb-2">Login</h2>
           <p class="text-slate-600">
             Welcome back! Please enter your email id and password
           </p>
@@ -96,21 +96,19 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+  // const email = ref('');
+  // const password = ref('');
+  // const showPassword = ref(false);
 
-const email = ref('')
-const password = ref('')
-const showPassword = ref(false)
+  // const togglePassword = () => {
+  //   showPassword.value = !showPassword.value;
+  // };
 
-const togglePassword = () => {
-  showPassword.value = !showPassword.value
-}
-
-const handleLogin = () => {
-  // Handle login logic here
-  console.log('Login attempt:', {
-    email: email.value,
-    password: password.value,
-  })
-}
+  // const handleLogin = () => {
+  //   // Handle login logic here
+  //   console.log('Login attempt:', {
+  //     email: email.value,
+  //     password: password.value,
+  //   });
+  // };
 </script>

@@ -1,32 +1,32 @@
 <script setup lang="ts">
-  import type { NavigationMenuItem } from "@nuxt/ui";
+  import type { NavigationMenuItem } from '@nuxt/ui';
 
   const items = ref<NavigationMenuItem[][]>([
     [
       {
-        label: "Dashboard",
-        class: "px-6 py-4 cursor-pointer rounded-md hover:bg-gray-200",
-        icon: "mynaui:chart-pie-solid",
-        to: "/dashboard",
+        label: 'Dashboard',
+        class: 'px-6 py-4 cursor-pointer rounded-md hover:bg-gray-200',
+        icon: 'mynaui:chart-pie-solid',
+        to: '/dashboard',
         badge: 10,
       },
       {
-        label: "Assets",
-        class: "px-6 py-4 cursor-pointer rounded-md hover:bg-gray-200",
-        icon: "mynaui:layers-three-solid",
-        to: "/assets",
+        label: 'Assets',
+        class: 'px-6 py-4 cursor-pointer rounded-md hover:bg-gray-200',
+        icon: 'mynaui:layers-three-solid',
+        to: '/assets',
       },
       {
-        label: "Transactions",
-        class: "px-6 py-4 cursor-pointer rounded-md hover:bg-gray-200",
-        icon: "mynaui:arrow-diagonal-one-solid",
-        to: "/transactions",
+        label: 'Transactions',
+        class: 'px-6 py-4 cursor-pointer rounded-md hover:bg-gray-200',
+        icon: 'mynaui:arrow-diagonal-one-solid',
+        to: '/transactions',
       },
       {
-        label: "Funds List",
-        class: "px-6 py-4 cursor-pointer rounded-md hover:bg-gray-200",
-        icon: "mynaui:swatches-solid",
-        to: "/funds-list",
+        label: 'Funds List',
+        class: 'px-6 py-4 cursor-pointer rounded-md hover:bg-gray-200',
+        icon: 'mynaui:swatches-solid',
+        to: '/funds-list',
       },
     ],
   ]);

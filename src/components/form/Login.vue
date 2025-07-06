@@ -1,14 +1,13 @@
 <script lang="ts" setup>
-  import * as z from "zod";
-  import type { FormSubmitEvent } from "@nuxt/ui";
+  import * as z from 'zod';
 
   const isShowPassword = ref(false);
 
   const cannotSubmit = ref(true);
 
   const schema = z.object({
-    email: z.string().email("Invalid email"),
-    password: z.string().min(8, "Must be at least 8 characters"),
+    email: z.string().email('Invalid email'),
+    password: z.string().min(8, 'Must be at least 8 characters'),
   });
 
   type Schema = z.output<typeof schema>;
@@ -19,13 +18,12 @@
   });
 
   const toast = useToast();
-  async function onSubmit(event: FormSubmitEvent<Schema>) {
+  async function onSubmit() {
     toast.add({
-      title: "Success",
-      description: "The form has been submitted.",
-      color: "success",
+      title: 'Success',
+      description: 'The form has been submitted.',
+      color: 'success',
     });
-    console.log(event.data);
   }
 </script>
 

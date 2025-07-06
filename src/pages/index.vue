@@ -1,9 +1,9 @@
 <script lang="ts" setup>
   definePageMeta({
-    layout: "private",
+    layout: 'private',
   });
 
-  await navigateTo("/dashboard");
+  await navigateTo('/dashboard');
 </script>
 
 <style lang="css" scoped>

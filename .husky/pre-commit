@@ -1,0 +1,18 @@
+#!/bin/bash
+set -e  # Exit immediately if a command exits with a non-zero status
+
+start=$(date +"%d/%m/%y %I:%M%P")
+start_duration=$(date +%s)
+
+
+
+echo "Husky Start...\n"
+pnpm lint-staged
+
+end=$(date +"%d/%m/%y %I:%M%P")
+end_duration=$(date +%s)
+runtime=$((end_duration - start_duration))
+
+echo "--------------------------------"
+echo "\nHusky Done  ✅"
+echo "Completed in \033[36m$runtime seconds\033[0m\n\n"

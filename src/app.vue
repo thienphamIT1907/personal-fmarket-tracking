@@ -1,5 +1,5 @@
-<script lang="ts">
-  import { AllCommunityModule, ModuleRegistry } from "ag-grid-community";
+<script lang="ts" setup>
+  import { AllCommunityModule, ModuleRegistry } from 'ag-grid-community';
 
   ModuleRegistry.registerModules([AllCommunityModule]);
 </script>
